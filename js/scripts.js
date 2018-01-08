@@ -36,8 +36,29 @@ alert(grabIndex(userInput));
 $(document).ready(function() {
 
   $(".clickable").click(function() {
-    $("#initially_showing").toggle();
-    $("#initially_hidden").toggle();
+    $("#initially_showing").slideToggle();
+    $("#initially_hidden").slideToggle();
+  });
+  $("button#green").click(function() {
+    $("body").removeClass();
+    $("body").addClass("green-background");
+  });
+  $("button#red").click(function() {
+    $("body").removeClass();
+    $("body").addClass("red-background");
+  });
+  $("button#yellow").click(function() {
+    $("body").removeClass();
+    $("body").addClass("yellow-background");
+  });
+  $("button#default").click(function() {
+    $("body").removeClass();
+  });
+  $("button#magic").click(function() {
+    $("p").addClass("magic");
+  });
+  $("button#magic2").click(function() {
+    $("p").removeClass("magic");
   });
 
 });

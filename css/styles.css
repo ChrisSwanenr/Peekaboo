@@ -8,3 +8,18 @@
 .clickable {
   cursor: pointer;
 }
+.green-background {
+  background-color: green;
+  color: #fff;
+}
+.red-background {
+  background-color: red;
+  color: #fff;
+}
+.yellow-background {
+  background-color: yellow;
+}
+
+.magic {
+  color: blue;
+}
